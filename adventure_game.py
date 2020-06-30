@@ -34,22 +34,22 @@ def choose():
 
 # Functions for random stories
 def story1(villains):
-    display(
-        f"You are about to knock but befor then the door opens and steps out a {villains[0]}.")
+    display(f"You are about to knock but before then "
+            f"the door opens and steps out a {villains[0]}.")
     display(f"Oh,no! This is the {villains[0]}'s house!")
     display("The monster attacks you!")
 
 
 def story2(villains):
-    display(
-        f"You are about to knock but befor then the door opens and steps out a {villains[1]}.")
+    display(f"You are about to knock but before then "
+            f"the door opens and steps out a {villains[1]}.")
     display(f"Oh,no! This is the {villains[1]}'s house!")
     display("The maleficent attacks you!")
 
 
 def story3(villains):
-    display(
-        f"You are about to knock but befor then the door opens and steps out a {villains[2]}.")
+    display(f"You are about to knock but before then "
+            f"the door opens and steps out a {villains[2]}.")
     display(f"Oh,no! This is the {villains[2]}'s house!")
     display("The fire-dragon attacks you!")
 
@@ -162,4 +162,3 @@ def play_again():
 # Main Function Call
 if __name__ == "__main__":
     play_again()
-
