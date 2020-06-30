@@ -155,4 +155,6 @@ def play_again():
 
 
 # Main Function Call
-play_again()
+if __name__ == "__main__":
+    play_again()
+
