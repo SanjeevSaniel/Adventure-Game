@@ -79,11 +79,13 @@ def fight(villains):
 
     elif y_n == "n" or y_n == "no":
         display("Thanks for playing! See ya next time.")
+    return
 
 
 def run():
     display("You run back into the field. "
-            "Luckily, you don't seem to have been followed.\n")
+            "Luckily, you don't seem to have been followed.")
+    display("Let's follow once more\n")
 
 
 def choice_one():
@@ -107,6 +109,8 @@ def choice_one():
         run()
         choose()
         choice()
+    else:
+        choice_one()
 
 
 def choice_two():
@@ -119,11 +123,11 @@ def choice_two():
 
 
 def choice():
-    choice = input()
-    if choice == "1" or choice == "one":
+    choice_input = input()
+    if choice_input == "1" or choice_input == "one":
         choice_one()
 
-    elif choice == "2" or choice == "two":
+    elif choice_input == "2" or choice_input == "two":
         choice_two()
         choose()
         c = input()
@@ -140,6 +144,7 @@ def choice():
 
     else:
         display("(Please enter 1 or 2).")
+        choose()
         choice()
 
 
